@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-m^uu7lc6ex(p@j5=@32eg^e4%jq*8fk%!upcsq7(&d2m6*g@+g
 #     secret_key = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['.vercel.app','now.sh']
@@ -113,18 +113,18 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'railway',
-    #     'USER': 'postgres',
-    #     'PASSWORD': 'nTKXMFORrgXIJaSlazQpfrIQbdNsFovp',
-    #     'HOST': 'roundhouse.proxy.rlwy.net',
-    #     'PORT': '15510',
-    # }
-        'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'nTKXMFORrgXIJaSlazQpfrIQbdNsFovp',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '15510',
     }
+    #     'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 }
 
 
