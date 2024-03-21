@@ -169,12 +169,12 @@ STATICFILES_DIRS = [
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'staticfiles_build',)
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'staticfiles_build',)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+# # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # MEDIA_URLS ='/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
