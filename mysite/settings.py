@@ -85,6 +85,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173/",  
 ]
+CSRF_TRUSTED_ORIGINS = ['https://oval-backend-production.up.railway.app/', 'oval-backend-production.up.railway.app']
 
 ROOT_URLCONF = 'mysite.urls'
 
