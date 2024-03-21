@@ -33,7 +33,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['.vercel.app','now.sh']
-CSRF_TRUSTED_ORIGINS = ['https://oval-backend-production.up.railway.app', ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://oval-backend-production.up.railway.app',
+      ]
 
 
 # Application definition
@@ -84,7 +86,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173/",  
+    "http://localhost:5173/",
+    "https://oval-backend-production.up.railway.app",  
 ]
 
 ROOT_URLCONF = 'mysite.urls'
