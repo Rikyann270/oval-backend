@@ -4,7 +4,7 @@ from records.models import(
     Record,
 )
 
-class RecordSerializer(serializers.ModelSerializer):
+class RecordSerializer(serializers.ModelSerializer):   
 
     class Meta:
         model = Record
