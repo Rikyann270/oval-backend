@@ -18,6 +18,7 @@ class Record(models.Model):
     item_name               = models.CharField(max_length=50, null=False, blank=False)
     inital_price            = models.IntegerField(null=True, blank=False)
     quantity                = models.IntegerField(null=False, blank=False)
+    date                    = models.CharField(max_length=5, null=True, blank=False)
     total_price             = models.IntegerField(null=False, blank=False)
     # image                 = models.ImageField(upload_to=upload_location, null=True, blank=True)
     date_published          = models.DateTimeField(auto_now_add=True, verbose_name="date published")

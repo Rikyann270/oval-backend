@@ -9,7 +9,7 @@ class RecordSerializer(serializers.ModelSerializer):
     class Meta:
         model = Record
         # fields = ['name', 'price','Image']
-        fields = ['title', 'item_name', "total_price", 'date_published', 'quantity']
+        fields = ['title', 'item_name', "total_price", 'date_published', 'quantity' , "date"]
 
 class RecordCkSerializer(serializers.ModelSerializer):
 
@@ -18,4 +18,4 @@ class RecordCkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Record
         # fields = ['name', 'price','Image']
-        fields = ['title', 'item_name', 'inital_price', 'quantity', "total_price"]
+        fields = ['title', 'item_name', 'inital_price', 'quantity', "date", "total_price"]

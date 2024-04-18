@@ -42,11 +42,13 @@ def api_create_record_view(request):
 
 
     if request.method=="POST":
-        serializer = RecordCkSerializer(record_info, data=request.data)
+        serializer = RecordCkSerializer(record_info,data=request.data)
 
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data,status=status.HTTP_201_CREATED)
+            response_data = serializer.data
+            response_data['user'] = str(request.user)
+            return Response(response_data,status=status.HTTP_201_CREATED)
 
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
